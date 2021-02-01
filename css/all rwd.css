@@ -2,6 +2,10 @@
 
 /* ###################################################### */
 @media screen and (max-width: 1200px){
+
+    .member-banner>h1{
+        font-size: 36px;
+    }    
     .presentation-table{
         width: 100%;
     }
@@ -18,7 +22,7 @@
     }
     .page1-content{
         width: 40%;
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
     .card-text-box{
         margin-right: 20px!important;
@@ -27,6 +31,30 @@
 
 /* ###################################################### */
 @media screen and (max-width: 992px){
+    .presentation-left>h4{
+        font-size: 26px;
+    }
+    .presentation-right>h2{
+        display: none;
+    }
+    .presentation-right{
+        padding-top: 0;
+    }
+    .addclass,.moreInfo-a{
+        font-size: 12px;
+    }
+    .page3-title{
+        padding-top: 0;
+    }
+    .page3-title>h3{
+        padding-bottom: 20px;
+    }
+    .page3-title>p{
+        padding-top: 0;
+    }
+    .page1-slogan{
+        padding-left: 5%;
+    }
     .contain-page{
         flex-direction: column;
     }
@@ -94,7 +122,7 @@
     }
     .page1-slogan{
         width: 40%;
-        padding-left: 10%;
+        /* padding-left: 10%; */
     }
     /* ----------上方導覽----------------- */
     .topnav>a{
@@ -106,6 +134,7 @@
     }
     
     .topnav.responsive {
+      
         position: absolute;
         flex-direction:column;
         width: 100%;    
@@ -128,8 +157,23 @@
 
 
 
-/* ###################################################### */
+/* ############################################################################# */
 @media screen and (max-width: 768px){
+    .member-banner>h1{
+        font-size: 28px;
+    } 
+    .card-main-box>.btn-1{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        width: 10px;
+        height: 30px;
+    }
+    .page1-slogan{
+        padding-left: unset;
+        transform: translate(-20%,-10%);
+    }
     .article-contain-box{
         padding-right: 0;
         margin: auto;
@@ -137,9 +181,9 @@
     .hotself-sidebar{
         margin: auto;
     }
+    
     .page3-title{
         padding: 0;
-        /* padding-bottom: 30px; */
     }
     .presentation-table>table, tr, td{
         width:100%;
@@ -176,9 +220,7 @@
     .banner-box-img{
         margin-top: 3%;
     }
-    .banner-box-title{
-        /* margin-right: 30px; */
-    }
+   
     .banner-box-title>h2{
         font-size: 28px;
         margin-top: 0;
@@ -247,8 +289,8 @@
         width:100px;
     }
     .page4-main{
-        padding-left:100px;
-        padding-right:30px;
+        padding:0px;
+        width: 50%;
     }
     .page4-img{
         display: none;
@@ -257,14 +299,11 @@
         display: block;  
     }
     .card-product{
-        margin-bottom: 30px;
+        margin: 30px auto;
+
     }
-    
-    
-    
-    
     .card-box>h6{
-       margin-top: 60px;
+       margin-top: 5%;
     }
     .product1,.product2{
         background-size: cover;
@@ -275,10 +314,10 @@
     }
     .card-container{
         display: block;
+        margin: auto;
     }
     .card-box,.card-product{
-        width: 100%;
-        height: 200px!important;
+        height: 130px!important;
     }
     .card-container>.card-product:nth-child(3){
         display: none;
@@ -287,11 +326,9 @@
         display: none;
     }
     .sound-content{
-        width: 480px;
-        text-align: center;
-        /* padding-right: 0; */
-        padding-left:20px;
-        padding-right:30px;
+        padding-right: 0;
+        width: 80%;
+        text-align: right;
     }
     
     .sound-content-box{
@@ -301,15 +338,21 @@
         margin-left: 10%;
     }
     .page1-content{
+        padding-top: 40px;
+        /* text-align: center; */
+        width: 50%;
         display: inline-block;
-        padding-left: 10%;
-        margin-top: 80px;
+        margin-top: 10%;
     }
-    .page1-content>h1,.page1-content>h4{
-        width:400px;
+    .text-slogan-top>p{
+        font-size: 50px;
+        -webkit-text-stroke:0.5px rgb(92, 92, 92);
     }
-    .slogan-box{
-        display: none;
+    .page1-slogan{
+        text-align: right;
+        margin-top: 70px;
+        position: absolute;
+        /* display: none; */
     }
     .container>h2{
         margin-top: 100px;
@@ -358,11 +401,27 @@
 
 /* ========================================================================= */
 @media screen and (max-width: 575px){
+    .member-banner>h1{
+        font-size: 24px;
+    }
+    .banner-box-title2>h2{
+        font-size: 24px;
+    }
+    .banner-box-title>h2{
+        white-space: nowrap;
+        overflow: unset;
+    }
+    
+    .text-slogan-top>p{
+        font-size: 40px;
+    }
+    
     .pro-detail-box{
         height: 435.4px!important;
     }
     .mamber-profilo>img{
         margin-top: 0px;
+        width:100px;
     }
     
     .Profilo{
@@ -405,9 +464,7 @@
         /* margin-bottom: 20px; */
         margin: auto;
     }
-    .swiper-container{
-        padding: 0!important;
-    }
+ 
     .swiper-slide-rwd>.product-card-text>.p2{
         display: none;
     }
@@ -423,6 +480,7 @@
     
     .product-card{
         width: 31%;
+        /* margin: 1%; */
     }
 
     .banner-box-img>img{
@@ -439,11 +497,11 @@
         /* margin: 0; */
         padding: 0;
     }
-    .banner-box-title>h2{
-        font-size: 20px;
+    .banner-box-title>h2,.presentation-left>h4{
+        font-size: 24px;
     }
     .banner-box>.swiper-container{
-        padding-top: 60px;
+        padding-top: 0px;
     }
 
     .blog-nav>ol>li>button:hover{
@@ -496,9 +554,12 @@
     .page4-article{
         text-align: center;
     }
+    .page4-article>h2,.page3-title>h2{
+        font-size: 24px;
+    }
     .page4-main{
-        padding-right: 0;
-        padding-left: 15px;
+        padding:0;
+        width: 70%;
     }
     .page3-title>p{
         width: auto;
@@ -512,15 +573,10 @@
     }
     .page5>h2{
         font-size:30px;
-        width: 80%;
+        width: 70%;
         text-align: center;
     }
-    .customer1>h4{
-        /* width:80%; */
-        /* position: relative; */
-        /* padding-left: 30px; */
-        /* margin-bottom: 20px; */
-    }
+   
     .customer1>p{
         position: absolute;
         right: 0;
@@ -535,6 +591,7 @@
     }
     .Customers-box{
         flex-direction: column;
+        width: 70%;
     }
     #card1,#card2{
         text-align: center;
@@ -545,7 +602,7 @@
     #card1>h6, #card1>p, #card1>.p2 ,#card2>h6,#card2>p,#card2>.p2{
         padding-top:0px;
         width: 100%;
-        background-color: rgba(26, 23, 58, 0.623);
+        /* background-color: rgba(26, 23, 58, 0.623); */
         text-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
     }
     #card1>p, #card2>p{
@@ -562,11 +619,18 @@
     .product1{
         padding-left: 5px;
     }
-    .sound-content h2{
-        font-size: 30px;
+    .sound-content>h2,.page1-content>h2{
+        font-size: 24px;
+    }
+    
+    .page1-content{
+      width: 70%;
     }
     .page1-content>h1, .page1-content>h4{
-        width:250px;
+        width:100%;
+    }
+    .page1-content>h4{
+        margin: 0 auto;
     }
     .page1-content>div{
         width: 100%;
@@ -604,7 +668,10 @@
     }
     .logo2{
         margin-left: 10px;
+        width: 100px;
+        margin-top: 15px;
     }
+    
     /* ----------footer----------------- */
     .email-textarea{
         margin-bottom: 15px!important;
@@ -669,8 +736,13 @@
     }
     /* ----------商品頁----------------- */
     .cart-box{
-        padding-top: 130px;
+        
+        padding: 0;
+        /* padding-top: 130px; */
         /* padding-right: 0; */
+    }
+    .cart-box>h3{
+        text-align: center;
     }
     .cart-box:nth-child(2){
         padding-bottom: 50px;

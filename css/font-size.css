@@ -76,6 +76,7 @@ p{
 }
 /* -------按鈕------ */
 #go_top{
+    margin: auto;
     z-index: 5;
     width: 40px;
     height: 40px;
@@ -89,10 +90,8 @@ p{
     background-color:#ff7c24;
     border-radius: .5rem;
     font-size: 20px;
-    line-height: 1;
     outline: none;
     cursor: pointer;
-    padding-bottom: 3px;
 }
 #go_top:hover{
     background-color: #e24478;  

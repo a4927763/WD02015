@@ -1,0 +1,107 @@
+
+
+.player-wrap {
+/* max-width: 480px;
+margin: 0 auto; */
+}
+.player-description {
+pointer-events: none;
+z-index: 999;
+}
+.audioplayer {
+height: auto;
+background: rgb(54, 61, 75);
+/* background: -moz-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(189, 189, 189, 1) 100%);
+background: -webkit-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(189, 189, 189, 1) 100%);
+background: linear-gradient(to bottom, rgba(224, 224, 224, 1) 0%, rgba(189, 189, 189, 1) 100%); */
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#bdbdbd', GradientType=0);
+border-top-left-radius: 10px;
+border-top-right-radius: 5px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.play-img-wrap {
+display: flex;
+border-top-left-radius: 5px;
+background: #000;
+position: relative;
+/* margin-right: 10px; */
+float: left;
+max-width: 215px;
+/* max-height: 200px; */
+overflow: hidden;
+}
+.play-img-wrap img {
+border-top-left-radius: 5px;
+vertical-align: bottom;
+transition: opacity .2s ease-in-out, filter .7s ease-in-out, transform .7s ease-in-out;
+opacity: 1;
+max-width: 103%;
+}
+.play-img-wrap i {
+position: absolute;
+color: #ffffff;
+font-size: 60px;
+left: calc(50% - 30px);
+top: calc(50% - 30px);
+z-index: 9;
+cursor: pointer;
+}
+.audio-description{
+    display: flex;
+}
+.audio-description h3 {
+color: #ffffff;
+padding: 10px 0;
+font-size: 16px;
+}
+.audio-description p {
+color: #ffffff;
+padding-right: 10px;
+font-size: 14px;
+}
+.audio-description h3, .audio-description p {
+margin: 0;
+}
+.clear {
+display: block;
+clear: both;
+}
+.pButton {
+height: 40px;
+width: 40px;
+border: none;
+background-size: 50% 50%;
+background-repeat: no-repeat;
+background-position: center;
+float: left;
+outline: none;
+opacity: 0;
+transition: opacity .4s ease-in-out;
+}
+.audioplayer:hover .player-img {
+opacity: 0.3;
+filter: blur(2px);
+transform: scale(1.03);
+}
+.audioplayer:hover .pButton {
+opacity: 1;
+}
+.timeline {
+border-top: 1px solid rgb(80, 80, 80);
+margin-top: 5px;
+width: 100%;
+height: 16px;
+float: left;
+background-image: url(../images/sound-wave/sound3.png);
+background-size: cover;
+background-position: top ;
+/* background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4px, rgb(67, 70, 88) 0, rgb(67, 70, 88) 8px) */
+}
+
+.playhead {
+width: 0px;
+height: 16px;
+margin-top: 0px;
+background: #F44336;
+box-shadow: 0 0 5px #F44336;
+}

@@ -1,6 +1,4 @@
-body{
-    margin: 0;    
-}
+
 #skin.-open{
     transform: translateY(0px);
     transition:  .3s ease-in-out;

@@ -70,13 +70,15 @@
            
             <div class="right-nav">
                 <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
-                <div class="login">
-                    <a href="./member.html"><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
-                    <div class="login-hidden-block">
-                        <a href="#">login</a>
-                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
-                        <a href="./member.html">member</a>
-                    </div>
+                <div class="login" style="background-color: #ff7c24;">
+                    <a href="#" >
+                        <img src="./images/icon/loggin.png" alt="loggin" width="20px">
+                    </a>
+                </div>
+                <div class="login-hidden-block">
+                    <a href="#">login</a>
+                    <input type="button"  value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                    <a href="./member.html">member</a>
                 </div>
             </div>
             <div id="register" class="modal">
@@ -137,9 +139,9 @@
                         <div class="page-effect">
                             <div class="page-box">
                                 <div class="page1-content">
-                                    <h1>Where your</h1>
-                                    <h1>music starts</h1>
-                                    <div></div>
+                                    <span><p>Free Download</p></span>
+                                    <h2>Where Your Music Starts</h2>
+                                    <div class="separate-line"></div>
                                     <h4>Trunksound Production.Industry-leading production.Endless inspiration. Start creating with free-packs.</h4><br>
                                     <input type="button" class="btn-1" value="Try free" onclick="self.location.href='./product.html';">
                                 </div>
@@ -165,8 +167,9 @@
                         <div class="sound-content-box">
                             <img  src="./images/index-2.png" width="400px" alt="" >
                             <div class="sound-content">
-                                <span><p>sound</p></span>
-                                <h2>Find your sound</h2>
+                                <span><p>Sound</p></span>
+                                <h2>Find Your Sound</h2>
+                                
                                 <h4>Preview and download millions of T.S.production samples from top producers, artists,and sound designers.</h4>
                                 <input type="button" class="btn-1" value="Try sound" onclick="self.location.href='./product.html';"> 
                             </div>
@@ -329,16 +332,39 @@
     <script>
     
     var myAnimation = new hoverEffect({
-        parent: document.querySelector('.page-effect'),
-        intensity1: 0.1,
-        intensity2: 0.1,
-        // angle2: Math.PI / 2,
-        image1: "./images/index-background4.jpg",
-        image2: "./images/index-background6.jpg",
-        imagesRatio: 1080 / 1920 ,
-        displacementImage: 'images/10.jpg'
-    });
+            parent: document.querySelector('.page-effect'),
+            intensity1: 0.1,
+            intensity2: 0.1,
+            // angle2: Math.PI / 2,
+            image1: "./images/index-background4.jpg",
+            image2: "./images/index-background6.jpg",
+            imagesRatio: 1080 / 1920 ,
+            displacementImage: './images/12.png'
+        });
 
+    // if(window.innerWidth < 576){
+    //     var myAnimation = new hoverEffect({
+    //         parent: document.querySelector('.page-effect'),
+    //         intensity1: 0.1,
+    //         intensity2: 0.1,
+    //         // angle2: Math.PI / 2,
+    //         image1: "./images/index-background4.jpg",
+    //         image2: "./images/index-background6.jpg",
+    //         imagesRatio: 1080 / 1920 ,
+    //         displacementImage: './images/12.jpg'
+    //     });
+    // }else{
+    //     var myAnimation = new hoverEffect({
+    //         parent: document.querySelector('.page-effect'),
+    //         intensity1: 0.1,
+    //         intensity2: 0.1,
+    //         // angle2: Math.PI / 2,
+    //         image1: "./images/index-background4.jpg",
+    //         image2: "./images/index-background6.jpg",
+    //         imagesRatio: 1080 / 1920 ,
+    //         displacementImage: './images/10.jpg'
+    //     });
+    // }
     </script>
 
     <!-- 動畫 -->
@@ -415,6 +441,11 @@
     };
     </script>
     <script>
+
+    $(".login").click(function(){
+        $(".login-hidden-block").toggleClass("back").closest(".login-hidden-block");
+    
+    });
         // gotop
         $(function(){
         $("#go_top").on("click", function(e){

@@ -47,13 +47,15 @@
            
             <div class="right-nav">
                 <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
-                <div class="login">
-                    <a href="./member.html"><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
-                    <div class="login-hidden-block">
-                        <a href="#">login</a>
-                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
-                        <a href="./member.html">member</a>
-                    </div>
+                <div class="login" style="background-color: #ff7c24;">
+                    <a href="#" >
+                        <img src="./images/icon/loggin.png" alt="loggin" width="20px">
+                    </a>
+                </div>
+                <div class="login-hidden-block">
+                    <a href="#">login</a>
+                    <input type="button"  value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                    <a href="./member.html">member</a>
                 </div>
             </div>
             <div id="register" class="modal">
@@ -350,7 +352,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(function(){
+     $(".login").click(function(){
+        $(".login-hidden-block").toggleClass("back").closest(".login-hidden-block");
+        
+    });
+    
+    
+    $(function(){
     
     // 點擊按鈕，頁面滑到最上方
     $("#go_top").on("click", function(e){

@@ -44,13 +44,15 @@
            
             <div class="right-nav">
                 <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
-                <div class="login"style="background-color: #ff7c24;">
-                    <a href="./member.html" ><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
-                    <div class="login-hidden-block">
-                        <a href="#">login</a>
-                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
-                        <a href="./member.html">member</a>
-                    </div>
+                <div class="login" style="background-color: #ff7c24;">
+                    <a href="#" >
+                        <img src="./images/icon/loggin.png" alt="loggin" width="20px">
+                    </a>
+                </div>
+                <div class="login-hidden-block">
+                    <a href="#">login</a>
+                    <input type="button"  value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                    <a href="./member.html">member</a>
                 </div>
             </div>
             <div id="register" class="modal">
@@ -93,9 +95,7 @@
                 </div>
                 <div class="member-contain">
                     <div class="mamber-profilo">
-                        <img src="./images/member-1.png" alt="">
-                        
-                        <!-- <h6>Yxx xxxx</h6> -->
+                        <img src="./images/member-2.jpeg" widht="100%" alt="">
                         
                         <div class="Profilo">
                             <h6>Info</h6>
@@ -103,12 +103,11 @@
                             <p>Email:a4927763@gmail.com</p>
                             <input type="button" class="subscrite" value="Edit">
                         </div>
-                        
                     </div>
                     <div class="mamber-box">
                         <div class="tab">
                             <button class="detail-links" onclick="opendetail(event, 'Order')">My Order</button>
-                            <button class="detail-links" onclick="opendetail(event, 'Wishlists')">My Wishlists</button>
+                            <button class="detail-links" id="defaultOpen" onclick="opendetail(event, 'Wishlists')">My Wishlists</button>
                         </div>
                         <div class="separate-line"></div>
                         <!-- Order -->
@@ -272,8 +271,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(function(){
-    
+    $(".login").click(function(){
+        $(".login-hidden-block").toggleClass("back").closest(".login-hidden-block");
+        
+    });
+
     // 點擊按鈕，頁面滑到最上方
     $("#go_top").on("click", function(e){
         e.preventDefault();
@@ -281,8 +283,8 @@
         scrollTop: 0
         }, 750);
     });
-    });
-
+  
+    //rwd nav~~~~~~~~~
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -324,7 +326,7 @@
     document.getElementById(detial).style.display = "block";
     evt.currentTarget.className += " active";
     }
- 
+    document.getElementById("defaultOpen").click();
     </script>
    
 </body>
