@@ -4,14 +4,31 @@
         list-style: none;    
         text-decoration:none;
     }
-    input[type=button], input[type=submit], input[type=file], button{
+    input[type=button],
+    input[type=submit],
+    input[type=file],
+    button{
         cursor: pointer; 
-        -webkit-appearance: none; 
+        appearance: none;
+        -moz-appearance: none;     /* FireFox */
+        -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
     } 
-    /* canvas{
-        width:100%!important;
-        height:100vh!important;
-    } */
+    input{
+        -webkit-tap-highlight-color:rgab(0,0,0,0);
+    }
+    input:focus{
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -webkit-user-modify:read-write-plaintext-only;
+    }
+    select{
+       appearance: none;
+       -moz-appearance:none;
+       -webkit-appearance:none;
+    }
+    select::-ms-expand{
+       display: none;
+    }
+
     body{
         margin: 0;
         display: block;
@@ -212,7 +229,7 @@
         background-color: #fefefe;
         margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #888;
-        width: 50%; /* Could be more or less, depending on screen size */
+        width: 80%; /* Could be more or less, depending on screen size */
     }
     .register-block{
         padding: 20px;
@@ -269,11 +286,11 @@
     } 
     .close {
         position: absolute;
-        right: 150px;
-        top: 69px;
+        right: 5%;
+        top: 5%;
         font-size: 40px;
         font-weight: bold;
-        color: #f1f1f1;
+        color: white;
     }
       
     .close:hover, .close:focus {
@@ -599,10 +616,6 @@
     justify-content: center;
     background-image: url(../images/text-3.png);
     background-repeat: no-repeat;
-   
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position-x: 80%;
     background-attachment: fixed;
@@ -938,17 +951,17 @@
     background-size: cover;
     
     background-position: bottom;
-    filter: blur(4px);
+    /* filter: blur(4px); */
  }
  .product-banner-img2{
     background-color: rgb(24, 21, 19);
     height: 400px;
     background-image: url("../images/Banner2.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 0;
+    background-size: contain;
+    background-position: center 30%;
     
-    filter: blur(3px);
+    /* filter: blur(3px); */
  }
  .product-banner-img3{
     background-image: url("../images/Banner3.jpg");
@@ -956,7 +969,7 @@
     background-repeat: no-repeat;
     height: 400px;
     background-position: bottom;
-    filter: blur(8px);
+    /* filter: blur(8px); */
  }
  .banner-box{
      top: 0;
@@ -1137,7 +1150,11 @@
     z-index: 2;
 }
 .presentation-right>h2{
+    color: #F2F2F2;
     margin-top:32px ;
+}
+.presentation-left>h4{
+    color: #F2F2F2;
 }
 .presentation-left>h2,.presentation-left>p,.presentation-left>h4,.presentation-right>h6,.presentation-right>p,.presentation-right>input{
     margin-top: 10px;
@@ -1405,6 +1422,16 @@ margin-left: 5%;
     letter-spacing: 0.3px;
     padding-top: 30px;
     
+}
+.article-contain-box>h4,.article-contain-box>.p2{
+    color:#9999999c;
+    font-size: 15px;
+}
+.article-contain-box>.p2{
+    padding-top: 10px;
+}
+.article-contain-box>h3{
+    color: #F2F2F2;
 }
 .article-contain-box>p{
     line-height: 40px;
@@ -1842,6 +1869,7 @@ float: right;
     text-align: center;
     background-color:#242b3a;
     padding: 20px;
+    margin-top: 15px;
     box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
 }
 .all-swiper{

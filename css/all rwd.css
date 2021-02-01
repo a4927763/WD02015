@@ -401,6 +401,15 @@
 
 /* ========================================================================= */
 @media screen and (max-width: 575px){
+    .addclass, .moreInfo-a{
+        width: 100%;
+    }
+    .swiper-container{
+        padding: 20px;
+    }
+    .card-product{
+        width: unset;
+    }
     .member-banner>h1{
         font-size: 24px;
     }
@@ -657,10 +666,11 @@
         margin-left:0px;
     }
     .cart,.login{
-        padding-right:0 ;
+        /* padding-right:0 ; */
     }
     .cart,.login{
-        padding-left: 10px;
+        /* padding-right: 5px;
+        padding-left: 10px; */
     }
     .topnav>.icon{
         padding: auto 10px;
