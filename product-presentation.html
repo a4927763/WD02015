@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentation</title>
+    <link rel="icon" href="./images/logo3.png" width="16px ">
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-size.css">
+    
+    <!-- swiper -->
+    <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.css" />
+    
+    <!-- rwd -->
+    <link rel="stylesheet" type="text/css" href="./css/all rwd.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo2" src="./images/logo1.png" alt="logo" width="150px" >
+                </a>
+            </div>
+            <div class="serch-bar">
+                <form>
+                    <input type="text" class="search" placeholder="search..." style="font-size:15px;font-family:Arial, Roboto, sans-serif;">
+                </form>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="./product.html" style="background-color: #ff7c24;">SOUNDS</a>
+                <a href="./product.html">PLUGINS</a>
+                <a href="./product.html" style="white-space:nowrap;">FREE-DOWNLOAD</a>
+                <a href="./blog.html">BLOG</a>
+                <a href="#">ABOUT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+           
+            <div class="right-nav">
+                <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
+                <div class="login">
+                    <a href="./member.html"><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
+                    <div class="login-hidden-block">
+                        <a href="#">login</a>
+                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                        <a href="./member.html">member</a>
+                    </div>
+                </div>
+            </div>
+            <div id="register" class="modal">
+                <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="./product-presentation.html">
+                    <div class="register-block">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+                
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="wrap">
+            <div class="container">
+                <div class="block"></div>
+                <div class="product-presentation-banner">
+                    <img src="" alt="">
+                </div>
+                <div class="product-box">
+                    <div class="product-main">
+                        <div class="presentation-left">
+                            <img src="./images/presentation1.png" width="80%" alt="">
+                            <h4>Progressive House Festival Kits</h4>
+                            <p>Tunecraft Chill Pop Vocals is a collection of vocal loops inspired by 
+                                artists like Odesza, Petit Biscuit, Illenium, Grey, DJ Snake and other 
+                                genre-leading artists.
+                            </p>
+                            <h4>What’s in the pack ?</h4>
+                            <ol>
+                                <li>25 wet vocal loops</li>
+                                <li>13 FX</li>
+                                <li>20 Drum Loops</li>
+                                <li>10 Harmonized vocal loops</li>
+                                <li>10 corresponding midi chord progressions</li>
+                                <li>16 bonus loops</li>
+                                <li>10 Construction Kits (100% Royalty Free) </li>
+                                <li>130 Drum Loops</li>
+                                <li>50 Massive Presets</li>
+                                <li>7 Serum & Sylenth1 Presets</li>
+                                <li>12 Vocal Shouts & Samples</li>
+                                <li>100% Royalty Free</li>
+                            </ol>
+                        </div>
+                        <div class="presentation-right">
+                            <h2>Progressive House Festival Kits</h2>
+                            <p>Genre: Pop, Future Pop, Vocal</p>
+                            <h6>Type: Samples & Loops</h6>
+                            <h6>Instrument: Pads, Vocals</h6>
+                            <h6>Size: 380MB</h6>
+                            <input type="button" class="btn-3" value="Buy">
+                            <input type="button" class="btn-3" value="Add To Buy">
+                            <br>
+                            <div class="play-demo-block">
+                                <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                <input type="button" id="playButton" >
+                                <div class="play-demo-packblock">
+                                    <h4>Play Demo</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="presentation-table">
+                                <table>
+                                    <thead>
+                                      <tr>
+                                        <td colspan="2">Sample</td>
+                                        <td>Key</td>
+                                        <td>BPM</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound1.png" width="auto" alt=""></td>
+                                        <td>B</td>
+                                        <td>70</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound2.png" alt=""></td>
+                                        <td>C#</td>
+                                        <td>90</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound3.png" alt=""></td>
+                                        <td></td>
+                                        <td>131</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound4.png" alt=""></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound5.png" alt=""></td>
+                                        <td>F#</td>
+                                        <td>101</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound1.png" alt=""></td>
+                                        <td>B</td>
+                                        <td>70</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href=""><img src="./images/icon/play-button2.png" width="20px" alt=""></a></td>
+                                        <td><img src="./images/sound-wave/sound2.png" alt=""></td>
+                                        <td>C#</td>
+                                        <td>90</td>
+                                      </tr>
+                                      
+                                 
+                                  </table>
+                            </div>
+                        </div>
+                        
+                        <div class="hotself-sidebar">
+                            <ol>
+                                <li><h6>Membership sounds</h6></li>
+                                <li><a href="">Violin For Electro</a></li>
+                                <li><a href="">EDM Mandala</a></li>
+                                <li><a href="">Shark Bass House</a></li>
+                                <li><a href="">Future Dubstep Jade</a></li>
+                                <li><a href="">Haan 808 Tool Kit Vol.1</a></li>
+                                <li><a href="" class="btn-2">View All</a></li>
+                            </ol>
+                            <br>
+                            <ol>
+                                <li><h6>Popular This Month</li>
+                                <li><a href="">2020 Mega Pack</a></li>
+                                <li><a href="">Ultimate FX Bundle 2</a></li>
+                                <li><a href="">Pure Latin House</a></li>
+                                <li><a href="">Alexandra Vocal Sessions</a></li>
+                                <li><a href="">Waverunner</a></li>
+                                <li><a href="" class="btn-2">View All</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="like-title">
+                    <h3>You might also like</h3>
+                </div>
+
+                <div class="all-swiper">
+                    <div class="column Newest">
+                        <div class="swiper-container swiper1" id="swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-rwd" >
+                                    <div class="product-card-img">
+                                        <img src="./images/index-3.jpeg" width="100%" height="100%" alt="" >
+                                    </div>
+                                    
+                                    <div class="product-card-text">
+                                        <p>R&B Soul</p>
+                                        <div class="p2">T.S.Production</div>
+                                    </div>
+                                    <div class="product-card-hiddenblock">
+                                        <img src="./images/icon/play-arrow.png" width="70px" alt="">
+                                        <input type="button" id="playButton"  onclick="play('audio2')">
+                                        <button class="addclass">
+                                            <p>Add To Cart</p>
+                                            <img class="btn-cart" src="./images/icon/shopping-cart.png" width="35%" alt="">
+                                        </button>
+                                        <a class="moreInfo" href="./product-presentation.html">
+                                            <p>More Info</p>
+                                            <img src="./images/icon/icons8-info-50.png" width="30%" alt="" >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination1"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>           
+                </div>    
+                
+                <div id="skin">
+                    <video id="myMovie" width="640">
+                        <source src="./sounds/Progressive House Festival Kits/6 Rain MIX.wav">
+                    </video>
+                    <section>
+                        <div id="demoplay">
+                            <img src="./images/product1.jpg" width="50px" alt="">
+                            <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="scroll"  scrollamount="2">
+                                  <a href="#">Progressive House Festival Kits</a>
+                            </marquee>
+                            <div id="defaultBar">
+                                <div id="progress"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                
+                <!-- =================================共同==================================== -->
+                <div class="subscrite-content">
+                    <div class="subscrite-box">
+                        <h4>Subscrite for our newsletter & u will get many free packs and plugins!</h4>
+                        <form action="">
+                            <input type="text" class="email-textarea" placeholder="Email">
+                            <input type="button" class="subscrite" value="subscrite">
+                        </form>
+                    </div>
+                </div> 
+                <div class="footer">
+                    <div class="footer-box">
+                        <div class="left-side">
+                            <a href="#"><p>About</p></a><br>
+                            <a href="#"><p>Contact us</p></a><br>
+                        </div>
+
+                        <div class="social-media">
+                            <ul> 
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-facebook-square"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-twitter"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-instagram"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-soundcloud"></span>
+                                </a> 
+                              </li>
+                            </ul> 
+                        </div> 
+
+                        <div class="licenses">
+                            <h6>Regular License</h6><br>
+                            <p>This here is our Regular License. You are able to use this particular license to learn and or to add some elements in your track. You may only use this for a non profit media background.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyrights">
+                    <p>© 2020 Trunk Sound Production</p>
+                </div>
+            </div>
+            <div class="go-top-button">
+                <button id="go_top" type="go-top-button">↑</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper1 = new Swiper('.swiper1', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplay:{
+                disbleOnInteraction:false,
+                delay:3000
+            },
+
+            pagination: {
+            el: '.swiper-pagination1',
+            clickable: true,
+            },
+
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        $('.swiper1').hover(function(){
+            swiper1.autoplay.stop();
+        },function(){
+            swiper1.autoplay.start();
+        });
+
+    </script>
+
+
+    <!------ gotop ------>
+        <script>
+        $(function(){
+        $("#go_top").on("click", function(e){
+            e.preventDefault();
+            $('html, body').animate({
+            scrollTop: 0
+            }, 750);
+        });
+        });
+
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+        </script>
+    <!------ play ------>
+
+    <script>
+    
+    $(".playButton").click(function(){
+
+        $("#skin").toggleClass("-open").closest("#skin");
+
+    });
+    // .css('')
+    function doFirst(){
+        barsize = 500;
+        myMovie = document.getElementById('myMovie');
+        playButton = document.getElementById('playButton');
+        defaultBar = document.getElementById('defaultBar');
+        progress = document.getElementById('progress');
+        skin = document.getElementById('skin')
+        playButton.addEventListener('click',playOrPause);
+        defaultBar.addEventListener('click',clickedBar);
+    }    
+    function playOrPause(){
+        if(!myMovie.paused && !myMovie.ended){
+            myMovie.pause();
+            playButton.innerText = 'play';
+            
+
+        }else{
+            myMovie.play();
+            playButton.innerText = 'pause';
+            setInterval(update,300);
+        
+        }
+    }
+
+    function update(){
+        if(!myMovie.ended){
+            let size = barsize / myMovie.duration * myMovie.currentTime;
+            progress.style.width = `${size}px`;
+        }else{
+            progress.style.width=`0px`;
+            playButton.innerText='play';
+            // $('#skin').removeClass("-open");
+            
+            skin.classList.remove("-open");
+            myMovie.currentTime = 0;
+            
+        }
+    }
+    function clickedBar(){
+
+    }
+    window.addEventListener('load',doFirst);
+
+    </script>
+
+</body>
+</html>

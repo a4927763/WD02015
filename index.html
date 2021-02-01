@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.S.Production</title>
+    <link rel="icon" href="./images/logo3.png" width="16px ">
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-size.css">
+    
+    <!-- rwd -->
+    <link rel="stylesheet" type="text/css" href="./css/all rwd.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!-- js -->
+    <script src="./js/all.js"></script>
+    <script src="./js/index.js"></script>
+
+    <!-- 首頁圖effect -->
+    <script src="./js/three.min.js"></script>
+    <!-- 不能跟官方混 -->
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/hover-effect.umd.js"></script>
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- 動畫 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    
+    <!-- scrollmagic 主要程式 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    
+    <!-- scrollmagic 重要跟tween結合+ gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    
+    <!-- scrollmagic 觸發點指標顯示 -->
+    <script src="./js/animations triggered.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo2" src="./images/logo1.png" alt="logo" width="150px" >
+                </a>
+            </div>
+            <div class="serch-bar">
+                <form>
+                    <input type="text" class="search" placeholder="search..." style="font-size:15px;font-family:Arial, Roboto, sans-serif;">
+                </form>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="./product.html">SOUNDS</a>
+                <a href="./product.html">PLUGINS</a>
+                <a href="./product.html" style="white-space:nowrap;">FREE-DOWNLOAD</a>
+                <a href="./blog.html">BLOG</a>
+                <a href="#">ABOUT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+           
+            <div class="right-nav">
+                <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
+                <div class="login">
+                    <a href="./member.html"><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
+                    <div class="login-hidden-block">
+                        <a href="#">login</a>
+                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                        <a href="./member.html">member</a>
+                    </div>
+                </div>
+            </div>
+            <div id="register" class="modal">
+                <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="./index.html">
+                    <div class="register-block">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+                
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="block"></div>
+    <div class="main">
+        
+        <div class="wrap">
+            
+            <div class="page-menu" id="nav-container">
+                
+                <ul id="nav-box">
+                    <li class="cur" id="icon1"><h4>Free</h4><img class="news-icon" id="icon1" src="./images/icon/home.png"  width="25px"> 
+                    </li>
+                    <li id="icon2"><h4>Product</h4><img class="news-icon"  src="./images/icon/product.png" width="25px">
+                    </li>
+                    <li id="icon3"><h4>News</h4><img class="news-icon"  src="./images/icon/news.png"  width="25px">
+                    </li>
+                    <li id="icon4"><h4>Blog</h4><img class="news-icon"  src="./images/icon/blog.png"  width="25px">
+                    </li>
+                    <li id="icon5"><h4>About</h4><img class="news-icon"  src="./images/icon/about.png"  width="25px">
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="container">
+                <div id="fullpage">
+                    <div class="page1" id="1">
+                        <div class="page-effect">
+                            <div class="page-box">
+                                <div class="page1-content">
+                                    <h1>Where your</h1>
+                                    <h1>music starts</h1>
+                                    <div></div>
+                                    <h4>Trunksound Production.Industry-leading production.Endless inspiration. Start creating with free-packs.</h4><br>
+                                    <input type="button" class="btn-1" value="Try free" onclick="self.location.href='./product.html';">
+                                </div>
+                                <div class="page1-slogan">
+                                    <div class="slogan-box">
+                                        <div class="text-slogan-top">
+                                            <p>WE</p>
+                                            <p>LOVE</p>
+                                            <p>SOUND</p>
+                                            <p>WE</p> 
+                                            <p>LIVE</p>
+                                            <p>TO</p>
+                                            <p>DESIGN</p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="page2" id="2">
+                        <div id="trigger01"></div>
+                        <div class="sound-content-box">
+                            <img  src="./images/index-2.png" width="400px" alt="" >
+                            <div class="sound-content">
+                                <span><p>sound</p></span>
+                                <h2>Find your sound</h2>
+                                <h4>Preview and download millions of T.S.production samples from top producers, artists,and sound designers.</h4>
+                                <input type="button" class="btn-1" value="Try sound" onclick="self.location.href='./product.html';"> 
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <div class="page3" id="3">
+                        <div id="trigger02"></div>
+                        <div class="page3-title">
+                            <h2>News</h2><br>
+                            <p id="disc-time" style= "font-size:36px; font-family:Courier New"></p>
+                            <h3>Recently published sounds packs!</h3>
+                            <div class="card-container">
+                                <div class="card-product">
+                                    <div id="card1" class="card-box product1">
+                                        <h6>Deluxe Vocal Bundle</h6>
+                                        <p>Genre: Deep House</p>
+                                        <div class="p2">T.S Production</div>
+                                        <input type="button" class="btn-1" value="Try sound" onclick="self.location.href='./product-presentation.html';">
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div id="card2"class="card-box product2">
+                                        <h6>Deluxe Vocal Bundle</h6>
+                                        <p>Genre: Deep House</p>
+                                        <div class="p2">T.S Production</div>
+                                        <input type="button" class="btn-1" value="Try sound" onclick="self.location.href='./product-presentation.html';">
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div id="card3" class="card-box product3">
+                                        <h6>Deluxe Vocal Bundle</h6>
+                                        <p>Genre: Deep House</p>
+                                        <div class="p2">T.S Production</div>
+                                        <input type="button" class="btn-1" value="Try sound" onclick="self.location.href='./product-presentation.html';">
+                                    </div>
+                                </div>
+                              </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="page4" id="4">
+                        <div id="trigger03"></div>
+                        <div class="page4-main">
+                            <div class="page4-article">
+                                <p>Blog</p>
+                                <h2>Your Knowledge is Your Virtue</h2>
+                                <div class="blog-article1">
+                                    <h4>Preview millions of T.S.production articles and Tips & Tutorials from top producers, artists,and sound designers.</h4>
+                                    <input type="button" class="btn-1"  value="Read"  onclick="self.location.href='./blog.html';">
+                                </div>
+                            </div>
+                            <div class="page4-img">
+                                <img src="./images/index-blog1.jpg" height="100%" width="100%" alt="" srcset="">
+                            </div>
+                            
+                        </div>  
+                    </div>
+                    <div class="page5" id="5">
+                        
+                        <div id="trigger04"></div>
+                        <h2>What Our Customers Says</h2><br>
+                        
+                        <div class="Customers-box">
+                            <div class="customer1" >
+                                <img src="./images/index-5.jpg" alt="">
+                                <h4 class="text-overflow5">Music has no limitations. Splice Sounds helps fuel my creativity and inspiration.<p>-TRAKGIRL</p></h4>
+                                
+                            </div>
+                            <div class="customer1">
+                                <img src="./images/index-6.jpg" alt="">
+                                <h4 class="text-overflow5">Releasing my vocal pack has allowed me to help so many producers while impacting my career in ways I could never have imagined.<p>-KARRA</p></h4>
+                              
+                            </div>
+                            <div class="customer1">
+                                <img src="./images/index-7.jpg" alt="">
+                                <h4 class="text-overflow5">Producers should do whatever inspires them with the sounds in my pack - layer, filter, distort them. Creative freedom.<p>-Chad Hugo</p></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscrite-content">
+                    <div class="subscrite-box">
+                        <h4>Subscrite for our newsletter & u will get many free packs and plugins!</h4>
+                        <form action="">
+                            <input type="text" class="email-textarea" placeholder="Email">
+                            <input type="button" class="subscrite" value="subscrite">
+                        </form>
+                    </div>
+                </div>
+                 
+                <div class="footer">
+                    <div class="footer-box">
+                        <div class="left-side">
+                            <a href="#"><p>About</p></a><br>
+                            <a href="#"><p>Contact us</p></a><br>
+                        </div>
+
+                        <div class="social-media">
+                            <ul> 
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-facebook-square"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-twitter"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-instagram"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-soundcloud"></span>
+                                </a> 
+                              </li>
+                            </ul> 
+                        </div> 
+
+                        <div class="licenses">
+                            <h6>Regular License</h6><br>
+                            <p>This here is our Regular License. You are able to use this particular license to learn and or to add some elements in your track. You may only use this for a non profit media background.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyrights">
+                        <p>© 2020 Trunk Sound Production</p>
+                </div>
+            </div>
+            <div class="go-top-button">
+                <button type="go-top-button" id="go_top"  title="back to top" UILabelButton.titleLabel.textAlignment = .Left>↑</button>
+            </div>
+                
+        </div>
+    </div>
+
+    <script>
+    
+    var myAnimation = new hoverEffect({
+        parent: document.querySelector('.page-effect'),
+        intensity1: 0.1,
+        intensity2: 0.1,
+        // angle2: Math.PI / 2,
+        image1: "./images/index-background4.jpg",
+        image2: "./images/index-background6.jpg",
+        imagesRatio: 1080 / 1920 ,
+        displacementImage: 'images/10.jpg'
+    });
+
+    </script>
+
+    <!-- 動畫 -->
+    <script>
+    TweenMax.staggerFrom('.text-slogan-top>p',1,{
+    x:500,
+    opacity:0,
+    },.1)
+    TweenMax.staggerFrom('.page1-content>*',1,{
+    x:-500,
+    opacity:0,
+    ease: Power0.easeNone,
+    },.1) 
+
+    // ScrollMagic function 
+    var controller = new ScrollMagic.Controller();
+    //第一個觸發事件
+    var tlm = TweenMax.to('.sound-content-box' , 1 , {
+        opacity:1
+    })
+    new ScrollMagic.Scene({
+        triggerElement : '#trigger01',
+    }).setTween(tlm)
+    .addIndicators({
+      colorTrigger: "#ffffff00",
+      colorStart: "#ffffff00",
+      colorEnd: "#ffffff00",
+    })
+    .addTo(controller);
+    //第二個觸發事件
+    var tlm2 = TweenMax.to('.card-box', 1 , {
+        y:5,
+    });
+    new ScrollMagic.Scene({
+        triggerElement : '#trigger02',
+    }).setTween(tlm2)
+    .addIndicators({
+      colorStart: "#ffffff00",
+    })
+    .addTo(controller);
+
+    //第三個觸發事件
+    var tlm3 = TweenMax.to('.customer1>img', 1 , {
+        rotation:0,
+        scale:1,
+    });
+    new ScrollMagic.Scene({
+        triggerElement : '#trigger04',
+    }).setTween(tlm3)
+    .addIndicators({
+      colorStart: "#ffffff00",
+    })
+    .addTo(controller);
+  
+    </script>
+    <script>
+    
+    var navContainer = document.getElementById("nav-container");
+    var navBox = document.getElementById("nav-box");
+    var fullpage = document.getElementById("fullpage");
+    var navBoxChild = navBox.children;
+    var fullpageChild = fullpage.children;
+    var a = navContainer.offsetHeight;
+    window.onscroll = function(){
+        var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        for(var i=0;i<navBoxChild.length;i++){
+            if( scrollTop + a >= fullpageChild[i].offsetTop){
+                for(var j=0; j<navBoxChild.length; j++){
+                    navBoxChild[j].className = "";
+                }
+            navBoxChild[i].className = "cur";
+            }
+        }
+    };
+    </script>
+    <script>
+        // gotop
+        $(function(){
+        $("#go_top").on("click", function(e){
+        e.preventDefault();
+            $('html, body').animate({
+            scrollTop: 0
+            }, 750);
+        });
+        });
+
+
+    $(document).ready(function(){
+        $('#icon1').click(function(){ 
+        $('html,body').animate({scrollTop:$('#1').offset().top}, 500);});
+        $('#icon2').click(function(){ 
+        $('html,body').animate({scrollTop:$('#2').offset().top}, 500);});  
+        $('#icon3').click(function(){ 
+        $('html,body').animate({scrollTop:$('#3').offset().top}, 500);});  
+        $('#icon4').click(function(){ 
+        $('html,body').animate({scrollTop:$('#4').offset().top}, 500);});  
+        $('#icon5').click(function(){ 
+        $('html,body').animate({scrollTop:$('#5').offset().top}, 500);});  
+    });
+
+
+    </script>
+
+        
+</body>
+</html>

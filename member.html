@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentation</title>
+    <link rel="icon" href="./images/logo3.png" width="16px ">
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-size.css">
+    
+    <!-- rwd -->
+    <link rel="stylesheet" type="text/css" href="./css/all rwd.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo2" src="./images/logo1.png" alt="logo" width="150px" >
+                </a>
+            </div>
+            <div class="serch-bar">
+                <form>
+                    <input type="text" class="search" placeholder="search..." style="font-size:15px;font-family:Arial, Roboto, sans-serif;">
+                </form>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="./product.html">SOUNDS</a>
+                <a href="./product.html">PLUGINS</a>
+                <a href="./product.html" style="white-space:nowrap;">FREE-DOWNLOAD</a>
+                <a href="./blog.html">BLOG</a>
+                <a href="#">ABOUT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+           
+            <div class="right-nav">
+                <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
+                <div class="login"style="background-color: #ff7c24;">
+                    <a href="./member.html" ><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
+                    <div class="login-hidden-block">
+                        <a href="#">login</a>
+                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                        <a href="./member.html">member</a>
+                    </div>
+                </div>
+            </div>
+            <div id="register" class="modal">
+                <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="./member.html">
+                    <div class="register-block">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+                
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="wrap">
+            <div class="container">
+                <div class="block"></div>
+                <div class="member-banner">
+                    <h1>My Account</h1>
+                </div>
+                <div class="member-contain">
+                    <div class="mamber-profilo">
+                        <img src="./images/member-1.png" alt="">
+                        
+                        <!-- <h6>Yxx xxxx</h6> -->
+                        
+                        <div class="Profilo">
+                            <h6>Info</h6>
+                            <p>Name:Huang Yxx xxxx</p>
+                            <p>Email:a4927763@gmail.com</p>
+                            <input type="button" class="subscrite" value="Edit">
+                        </div>
+                        
+                    </div>
+                    <div class="mamber-box">
+                        <div class="tab">
+                            <button class="detail-links" onclick="opendetail(event, 'Order')">My Order</button>
+                            <button class="detail-links" onclick="opendetail(event, 'Wishlists')">My Wishlists</button>
+                        </div>
+                        <div class="separate-line"></div>
+                        <!-- Order -->
+                        <div id="Order" class="pro-detail-box">
+                            <button class="pro-detail">Pop Future R&B</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Pop Future R&B" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+    
+                            <button class="pro-detail">Hip Hop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Progressive House" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+    
+                            <button class="pro-detail">Future Pop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download=">Future Pop" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                        </div>
+                        <!-- Wishlists -->
+                        <div id="Wishlists" class="pro-detail-box">
+                            <button class="pro-detail">Pop Future R&B</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Pop Future R&B" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+    
+                            <button class="pro-detail">Hip Hop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Progressive House" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <button class="pro-detail">Pop Future R&B</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Pop Future R&B" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <button class="pro-detail">Future Pop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download=">Future Pop" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <button class="pro-detail">Hip Hop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Progressive House" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download=">Future Pop" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <button class="pro-detail">Hip Hop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Progressive House" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download=">Future Pop" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                            <button class="pro-detail">Pop</button>
+                            <div class="panel">
+                                <p>Status: order successful</p>
+                                <p>order#xxxxxxxx</p>
+                                <p>Last: 28/Jul/2017 08:03</p>
+                                <a class="btn-1" href="./sounds/test.doenload.7z" download="Progressive House" onClick="return confirm('Are u sure u want to DL?')">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =================================共同==================================== -->
+                <div class="footer">
+                    <div class="footer-box">
+                        <div class="left-side">
+                            <a href="#"><p>About</p></a><br>
+                            <a href="#"><p>Contact us</p></a><br>
+                        </div>
+
+                        <div class="social-media">
+                            <ul> 
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-facebook-square"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-twitter"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-instagram"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-soundcloud"></span>
+                                </a> 
+                              </li>
+                            </ul> 
+                        </div> 
+
+                        <div class="licenses">
+                            <h6>Regular License</h6><br>
+                            <p>This here is our Regular License. You are able to use this particular license to learn and or to add some elements in your track. You may only use this for a non profit media background.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyrights">
+                    <p>© 2020 Trunk Sound Production</p>
+                </div>
+            </div>
+            
+            <div class="go-top-button">
+                <button type="go-top-button" id="go_top">↑</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+    
+    // 點擊按鈕，頁面滑到最上方
+    $("#go_top").on("click", function(e){
+        e.preventDefault();
+        $('html, body').animate({
+        scrollTop: 0
+        }, 750);
+    });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+
+    //detail~~~~~~~~~~~~~~~~
+    var acc = document.getElementsByClassName("pro-detail");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active2");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+
+
+    //---------------------------------
+    function opendetail(evt, detial) {
+    var i, detail, links;
+    detail = document.getElementsByClassName("pro-detail-box");
+        for (i = 0; i < detail.length; i++) {
+            detail[i].style.display = "none";
+        }
+    links = document.getElementsByClassName("detail-links");
+        for (i = 0; i < links.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+        }
+    document.getElementById(detial).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+ 
+    </script>
+   
+</body>
+</html>

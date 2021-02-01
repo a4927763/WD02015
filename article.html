@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/logo3.png" width="16px ">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-size.css">
+    
+    <!-- rwd -->
+    <link rel="stylesheet" type="text/css" href="./css/all rwd.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo2" src="./images/logo1.png" alt="logo" width="150px" >
+                </a>
+            </div>
+            <div class="serch-bar">
+                <form>
+                    <input type="text" class="search" placeholder="search..." style="font-size:15px;font-family:Arial, Roboto, sans-serif;">
+                </form>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="./product.html">SOUNDS</a>
+                <a href="./product.html">PLUGINS</a>
+                <a href="./product.html" style="white-space:nowrap;">FREE-DOWNLOAD</a>
+                <a href="./blog.html" >BLOG</a>
+                <a href="#">ABOUT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+           
+            <div class="right-nav">
+                <div class="cart"><a href="./cart.html"><img src="./images/icon/shopping-cart.png" alt="shop-cart" width="20px" ></a></div>    
+                <div class="login">
+                    <a href="./member.html"><img src="./images/icon/loggin.png" alt="loggin" width="20px"></a>
+                    <div class="login-hidden-block">
+                        <a href="#">login</a>
+                        <input type="button" value="register"  onclick="document.getElementById('register').style.display='block'" style="width:auto;">
+                        <a href="./member.html">member</a>
+                    </div>
+                </div>
+            </div>
+            <div id="register" class="modal">
+                <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="./article.html">
+                    <div class="register-block">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+                
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="wrap">
+            <div class="container">
+                <div class="product-banner product-banner-img1">
+                </div>
+                <div class="banner-box">
+                    <div class="banner-box-title2">
+                        <h2 class="text-overflow2">Your Knowledge is Your Virtue</h2>
+                        <h6 class="text-overflow3">Welcome to our blog made for all music producers and artists all around the world!</h6>
+                        
+                    </div>
+                </div>
+                
+                <div class="article-all">
+                    <div class="contain-page">
+                        <div class="article-contain-box">
+                            <h4>DOWNLOAD LISTS</h4>
+                            <h3>The Best Free Audio Sample Packs For EDM</h3>
+                            <p2>By Trounksound Production</p2><br><br>
+                            <img src="./images/article-middle.jpg" width="80%" alt="">
+                            <h6>Labeling Your Project Files & Presets</h6>
+                            <p>Struggling to find and old session, Accidentally saving over a project file, overcrowding your desktop? Having a simple but effective system to save your projects is a great way to organize not only your library of projects but clear up space on your computer. It's helpful to save project files with a distinct name, date, and numbering system. Doing this can help you keep track of your project sessions and find older projects later on. If you're a sound design heavy producer or just like certain pre-loaded sounds in synthesizers, save them when you can! It'll be easier to find them later and you never know when you might need them.</p>
+                            <h3>Mix As You Go</h3>
+                            <p>You may have heard the term “mix as you go” before. This term refers to the small steps you can take to help yourself get the best mix you can while working on a song instead of waiting until further down the line to start mixing. These techniques can help you reach a better mix without sacrificing creative flow.</p>
+                        </div>
+                        <div class="hotself-sidebar">
+                            <ol>
+                                <li><h6>Membership sounds</h6></li>
+                                <li><a href="">Violin For Electro</a></li>
+                                <li><a href="">EDM Mandala</a></li>
+                                <li><a href="">Shark Bass House</a></li>
+                                <li><a href="">Future Dubstep Jade</a></li>
+                                <li><a href="">Haan 808 Tool Kit Vol.1</a></li>
+                                <li><a href="" class="btn-2">View All</a></li>
+                            </ol>
+                            <br>
+                            <ol>
+                                <li><h6>Popular This Month</li>
+                                <li><a href="">2020 Mega Pack</a></li>
+                                <li><a href="">Ultimate FX Bundle 2</a></li>
+                                <li><a href="">Pure Latin House</a></li>
+                                <li><a href="">Alexandra Vocal Sessions</a></li>
+                                <li><a href="">Waverunner</a></li>
+                                <li><a href="" class="btn-2">View All</a></li>
+                            </ol>
+                    </div>
+                    </div>
+                </div>
+                <div id="myblog-btn" class="blog-nav fix-none">
+                    <ol>
+                        <li><button class="btn active" onclick="filterSelection('all')">All Post</button></li>
+                        <li><button class="btn" onclick="filterSelection('Download')">Download List</button></li>
+                        <li><button class="btn" onclick="filterSelection('Scene')">EDM Scene</button></li>
+                        <li><button class="btn" onclick="filterSelection('Tips')">FL Studio Tips</button></li>
+                        <li><button class="btn" onclick="filterSelection('Production')">Music Production</button></li>
+                    </ol>
+                </div>
+                <div class="product-main">
+                    <div class="article-all">
+                        <div class="article Download">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Download">
+                            <div class="article-text " style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div><div class="article Download">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div><div class="article Download">
+                            <div class="article-text" style="cursor:pointer;"onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Download">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Download">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="article Scene">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div><div class="article Scene">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                    
+                        <div class="article Scene">
+                            <div class="article-text" style="cursor:pointer;"onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Tips">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div><div class="article Tips">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div><div class="article Tips">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                    
+                        <div class="article Tips">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Tips">
+                            <div class="article-text" style="cursor:pointer;"onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Production">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Production">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Production">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Production">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Production">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                        <div class="article Production">
+                            <div class="article-text" style="cursor:pointer;" onclick="location.href='/article.html'">
+                                <h3>How To Make Better Sounding EDM Leads</h3>
+                                <p>By T.S Production | on 30, Dec 2021 |</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-btn">
+                    <input type="button" class="btn-1" value="Load More">
+                </div> 
+                
+                
+                <!-- =================================共同==================================== -->
+                <div class="subscrite-content">
+                    <div class="subscrite-box">
+                        <h4>Subscrite for our newsletter & u will get many free packs and plugins!</h4>
+                        <form action="">
+                            <input type="text" class="email-textarea" placeholder="Email">
+                            <input type="button" class="subscrite" value="subscrite">
+                        </form>
+                    </div>
+                </div> 
+                <div class="footer">
+                    <div class="footer-box">
+                        <div class="left-side">
+                            <a href="#"><p>About</p></a><br>
+                            <a href="#"><p>Contact us</p></a><br>
+                        </div>
+
+                        <div class="social-media">
+                            <ul> 
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-facebook-square"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-twitter"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-instagram"></span>
+                                </a> 
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span class="fab fa-soundcloud"></span>
+                                </a> 
+                              </li>
+                            </ul> 
+                        </div> 
+
+                        <div class="licenses">
+                            <h6>Regular License</h6><br>
+                            <p>This here is our Regular License. You are able to use this particular license to learn and or to add some elements in your track. You may only use this for a non profit media background.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyrights">
+                    <p>© 2020 Trunk Sound Production</p>
+            </div>
+            </div>
+            
+            <div class="go-top-button">
+                <button type="go-top-button" id="go_top">↑</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+    
+    // 點擊按鈕，頁面滑到最上方
+    $("#go_top").on("click", function(e){
+        e.preventDefault();
+        $('html, body').animate({
+        scrollTop: 0
+        }, 750);
+    });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    
+    // category-nav  
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myblog-btn").style.top = "60px";
+    } else {
+        document.getElementById("myblog-btn").style.top = "0";
+    }
+    }
+    </script>
+ <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("article");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myblog-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</body>
+</html>

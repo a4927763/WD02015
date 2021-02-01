@@ -1,0 +1,117 @@
+body{
+    margin: 0;    
+}
+#skin.-open{
+    transform: translateY(0px);
+    transition:  .3s ease-in-out;
+}
+#skin{
+    border-top:2px solid white;
+    transition:  .3s ease-in-out;
+    transform: translateY(60px);
+    z-index: 30!important;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#202533;
+    height: 60px;
+}
+#skin>#myMovie{
+    display: none;
+}
+#demoplay{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+}
+
+#playButton{
+    text-transform: capitalize;
+    font: 15px Tahoma;
+    width:125px;
+    height: 30px;
+    background-color:#ff7c24;
+    border-radius: .2rem;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
+    z-index: 1;
+    cursor: pointer;
+}
+#demoplay>marquee{
+    width: 200px;
+    margin-right: 50px;
+}
+#demoplay>marquee>a{
+    display: block;
+    padding-top: 15px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#demoplay>button, #demoplay>#defaultBar, #demoplay>img{
+    margin:auto;
+    margin-right: 50px;
+}
+#defaultBar{
+    height: 5px;
+    width: 500px;
+    border-radius: .5rem;
+    background: rgb(197, 197, 197);
+    position: relative;
+}
+#defaultBar>#progress{
+    width: 0px;
+    height: 5px;
+    background: rgb(95, 95, 95);
+}
+
+/* =============================== */
+.presentation-table>table,tr,td{
+    border:1px solid#bcc7d4;
+    border-collapse:collapse;
+    padding: 10px;
+    background-color: rgb(48, 55, 71);
+    color:#bcc7d4;
+    font-size: 15px;
+}
+.presentation-table td{
+    max-width: 260px;
+}
+.presentation-table h3{
+    margin: 0;
+}
+.sample1-block{
+    width: 260px;
+    height: 25px;
+    border-right:2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.144);
+    z-index: 2;
+    background-image: url("../images/sound-wave/sound3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: middle;
+}
+/* ========== */
+td>button{
+    width: 30px;
+    height: 30px;
+    /* padding-top: 6px; */
+    background-color: rgba(155, 65, 65, 0);
+    /* visibility:hidden; */
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+}
+td>img{
+    position: absolute;
+    padding-top: 3px;
+    padding-left: 4px;
+    left: 10px
+}

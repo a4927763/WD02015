@@ -1,0 +1,193 @@
+/* @import url('https://fonts.googleapis.cpm/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+/* font-family: "Courier New", Courier, monospace; */
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    font-weight:Bold; 
+    letter-spacing:0.06em;
+    margin: 0;
+}
+   
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight:Bold; 
+    /* color: white; */
+    margin: 0;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    margin: 0;
+    /* color: #bcc7d4; */
+}
+h4{
+    font-family: "Roboto",  sans-serif;
+    font-size: 18px;
+    /* font-weight:Bold;  */
+    margin: 0;
+
+}
+h5{
+    font-family: "Roboto", sans-serif; 
+    font-size: 10px;
+    font-weight:bold;
+    /* color: white; */
+    margin: 0;
+}
+h6{
+    font-family: "Roboto", sans-serif; 
+    font-size: 15px;
+    font-weight:bold;
+    /* color: white; */
+    margin: 0;
+}
+
+.p2{
+    font-family: "Roboto", sans-serif; 
+    font-size: 10px;
+    font-weight:Thin;
+    margin: 0;
+}
+
+p{
+    font-family: "Roboto", sans-serif; 
+    font-size: 15px;
+    font-weight:Thin;
+    margin: 0;
+    
+}
+/* --------按鈕 */
+.btn-1{
+    background-color: #ff7c24;
+    color: #ffffff;
+    width:125px;
+    height: 35px;
+    border-radius: 1rem;
+    border:none;
+    cursor:pointer;
+    outline: none;
+    box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
+    /* transition:  .3s ease-in-out; */
+}
+.btn-1:hover{
+    background-color: #e24478;  
+}
+/* -------按鈕------ */
+#go_top{
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 4%;
+    bottom: 5%;
+    border: none;
+    box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
+    color:white;
+    background-color:#ff7c24;
+    border-radius: .5rem;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+#go_top:hover{
+    background-color: #e24478;  
+    /* background-color: #929292;   */
+}
+
+/* --------按鈕 */#bfbfef
+.btn-1{
+    background-color: #ff7c24;
+    color: #ffffff;
+    width:125px;
+    height: 35px;
+    border-radius: 1rem;
+    border:none;
+    cursor:pointer;
+    outline: none;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 34%);
+    /* transition:  .3s ease-in-out; */
+}
+.btn-1:hover{
+    background-color: #e24478;  
+}
+/* -------按鈕------ */
+.btn-3{
+    background-color: #ff7c24;
+    color:#e7e7e7;
+    width:90px;
+    height: 25px;
+    border-radius: 1rem;
+    border:none;
+    cursor:pointer;
+    outline: none;
+    box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
+    transition:  .3s ease-in-out;
+}
+.btn-3:hover{
+    box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
+    background-color: #e24478; 
+    color:#ffffff; 
+}
+/* -------------滑動卷軸改變------------------- */
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+    width: 15px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+/* ---------文字超出範圍----------------- */
+.text-overflow2{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.text-overflow3{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+}
+.text-overflow5{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:5;
+}
+
+
+
+.separate-line{
+    box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
+    border-top:2px solid rgb(105, 105, 105);
+}
