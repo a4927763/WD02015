@@ -78,8 +78,8 @@ p{
 #go_top{
     margin: auto;
     z-index: 10;
-    width: 30px;
-    height: 30px;
+    /* width: 30px; */
+    /* height: 30px; */
     background: none;
     position: fixed;
     right: 4%;
@@ -89,9 +89,10 @@ p{
     color:white;
     background-color:#ff7c24;
     border-radius: .5rem;
-    font-size: 16px;
+    font-size: 20px;
     outline: none;
     cursor: pointer;
+    padding: 2px 10px;
 }
 #go_top:hover{
     background-color: #e24478;  
