@@ -191,3 +191,8 @@ p{
     box-shadow:1px 1px 6px rgba(0, 0, 0, 0.342);
     border-top:2px solid rgb(105, 105, 105);
 }
+
+input[type=button], input[type=submit], input[type=file], button{
+    cursor: pointer; 
+    -webkit-appearance: none; 
+} 
