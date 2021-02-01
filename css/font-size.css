@@ -192,7 +192,3 @@ p{
     border-top:2px solid rgb(105, 105, 105);
 }
 
-input[type=button], input[type=submit], input[type=file], button{
-    cursor: pointer; 
-    -webkit-appearance: none; 
-} 
