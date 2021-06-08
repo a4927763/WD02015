@@ -1,5 +1,3 @@
-
-
 var countDownDate = new Date("Feb 6, 2021 12:00:00").getTime();
 var countdownfunction = setInterval(function() {
 var now = new Date().getTime();
@@ -19,9 +17,3 @@ if (distance < 0) {
     document.getElementById("disc-time").innerHTML = "EXPIRED";
 }
 }, 1000);
-
-
-
-
-
-
